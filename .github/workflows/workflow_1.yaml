@@ -2,7 +2,7 @@ name: Tests Workflow
 run-name: Tests
 on: push
 jobs:
-  check-flutter-doctor:
+  run-tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

@@ -7,6 +7,6 @@ void main() {
     await tester.pumpWidget(MainApp());
     await tester.pump();
     // expect(find.widgetWithText(Text, 'Hello Makis'), findsOneWidget);
-    expect(find.byType(Text), findsOneWidget);
+    expect(find.byType(Container), findsOneWidget);
   });
 }
