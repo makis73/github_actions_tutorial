@@ -1,4 +1,5 @@
 name: workflow_1
+run-name: Check Flutter Doctor
 on: push
 jobs:
   check-flutter-doctor:
