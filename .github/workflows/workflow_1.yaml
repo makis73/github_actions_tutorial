@@ -1,0 +1,13 @@
+name: workflow_1
+on: push
+jobs:
+  check-flutter-doctor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Flutter
+        uses: britannio/action-install-flutter@v1
+      - name: Get Packages
+        run: flutter pub get
+      - name: Run docton
+        run: flutter doctor 
